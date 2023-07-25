@@ -21,3 +21,9 @@ const longest = (s1, s2) => {
 };
 
 console.log(longest(s1, s2));
+
+//shorter way
+
+const longest2 = (s1, s2) => [...new Set(s1 + s2)].sort().join('');
+
+console.log(longest2(s1, s2));
